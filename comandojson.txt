@@ -1,1 +1,1 @@
-json-server --watch docentes.json --host 0.0.0.0 --port 3300
+json-server --watch docente.json --host 0.0.0.0 --port 3300
