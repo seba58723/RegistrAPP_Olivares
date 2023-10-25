@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="MostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <img slot="end" src="assets/duoc.png" style="max-width: 40%; margin-right: 8px;">
+    <ion-title style="font-size: 12px; text-align: left; margin-left: 0;">RegistrApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content class="ion-padding">
+  <div class="background">
+    <div class="logo-container">
+      <ion-img src="assets\duoc.jpg" style="width: 60%; height: 60%;"></ion-img>
+    </div>
+    <ion-button  [routerLink]="['/login']" shape="round" expand="full" color="primary" class="ion-margin-top custom-button">Iniciar Sesión </ion-button>
+    <br>
+    <ion-button [routerLink]="['/registrarse']" shape="round" expand="full" color="secondary" class="custom-button ">Registrarse</ion-button>
+  </div>
+</ion-content>

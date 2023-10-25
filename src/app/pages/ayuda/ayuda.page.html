@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/docente"
+         text="volver"
+         color="primary"
+         mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img src="assets/qr.png" class="ion-padding" style="width: 350px;">
+    <ion-card-header class="encabezado">
+      <ion-card-title style="color:black; font-weight: bold; font-size: 30px;">Proyectar QR</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="contenido">
+      <i>Inicia sesión</i> en la plataforma con tus credenciales de acceso, si eres docente, debes proyectar el código QR desde <a href="/registrarse">www.registrapp.cl</a> para que los estudiantes puedan escanearlo.
+ 
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <img src="assets/scanearqr2.png" class="ion-padding " style="background-color:  rgb(121, 121, 121);">
+    <ion-card-header class="encabezado">
+      <ion-card-title style="color:black; font-weight: bold; font-size: 30px;">Escanear QR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      Si eres estudiante, deberás escanear el QR proyectado por tu docente para registrar tu asistencia.
+    </ion-card-content>
+  </ion-card>
+
+<br>
+
+
+
+</ion-content>

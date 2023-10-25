@@ -1,0 +1,61 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <br>
+
+  <ion-card>
+    <img src="assets/duoc.jpg" class="ion-padding" style="background-color:cornsilk;">
+  </ion-card>
+  
+  <form [formGroup]="loginForm" class="ion-padding">
+
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" formControlName="correo"></ion-input>
+    </ion-item>
+    <div *ngIf="loginForm.get('correo')?.invalid && (loginForm.get('correo')?.dirty || 
+                loginForm.get('correo')?.touched)">
+      <div style="color:red" *ngIf="loginForm.get('correo')?.hasError('required')">
+        *Correo electrónico es obligatorio
+      </div>
+      <div style="color:red" *ngIf="loginForm.get('correo')?.hasError('minlength')">
+        *Correo electrónico debe tener mínimo 4 caracteres
+      </div>
+    </div>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+
+    <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || 
+                loginForm.get('password')?.touched)">
+      <div style="color:red" *ngIf="loginForm.get('password')?.hasError('required')">
+        *Contraseña es obligatoria
+      </div>
+      <div style="color:red" *ngIf="loginForm.get('password')?.hasError('minlength')">
+        *Contraseña debe tener mínimo 4 caracteres
+      </div>
+    </div>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-button (click)="login()" [disabled]="!loginForm.valid" expand="block" color="primary" shape="round">
+          Login
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+  <div class="ion-text-center">
+    ¿No tienes una cuenta?
+  </div>
+  <div class="ion-text-center">
+  <ion-button [routerLink]="['/registrarse']" fill="clear" color="primary">Registrarse</ion-button>
+  </div>
+</ion-content>

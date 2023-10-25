@@ -1,0 +1,118 @@
+{
+  "docentes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "correo": "juan.perez@example.com",
+      "contrasena": "password123",
+      "asignaturas": [
+        1,
+        2
+      ],
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellido": "Gómez",
+      "correo": "maria.gomez@example.com",
+      "contrasena": "securepass",
+      "asignaturas": [
+        3,
+        4
+      ],
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "nombre": "John",
+      "apellido": "Doe",
+      "correo": "John@Doe",
+      "contrasena": "johndoe",
+      "asignaturas": [
+        3,
+        4
+      ],
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "nombre": "asdasd",
+      "apellido": "asdasd",
+      "correo": "ads@gmail.com",
+      "contrasena": "asdasdasd",
+      "asignaturas": [
+        3,
+        4
+      ],
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "nombre": "juan",
+      "apellido": "juan",
+      "correo": "juan@juan.com",
+      "contrasena": "hola12xd",
+      "asignaturas": [
+        1,
+        2
+      ],
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "nombre": "esteban ",
+      "apellido": "navarrete",
+      "correo": "esteban@esteban.com",
+      "contrasena": "hola12xd",
+      "asignaturas": [
+        1,
+        2
+      ],
+      "isActive": true
+    }
+  ],
+  "asignaturas": [
+    {
+      "id": 1,
+      "seccion": "010D",
+      "nombre": "Matemáticas",
+      "periodo_academico": {
+        "año": 2023,
+        "semestre": 1
+      },
+      "horas_semanales": 6
+    },
+    {
+      "id": 2,
+      "seccion": "020D",
+      "nombre": "Ciencias",
+      "periodo_academico": {
+        "año": 2023,
+        "semestre": 1
+      },
+      "horas_semanales": 5
+    },
+    {
+      "id": 3,
+      "seccion": "030D",
+      "nombre": "Historia",
+      "periodo_academico": {
+        "año": 2023,
+        "semestre": 1
+      },
+      "horas_semanales": 4
+    },
+    {
+      "id": 4,
+      "seccion": "040D",
+      "nombre": "Literatura",
+      "periodo_academico": {
+        "año": 2023,
+        "semestre": 1
+      },
+      "horas_semanales": 3
+    }
+  ]
+}
